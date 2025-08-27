@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding: 100px;
+        transition: all 2.0s;
+      }
+    </style>
+</head>
+<body>
+    <header class="bg-[#535FA8] h-[120px] mx-2 mt-2 flex justify-center items-center" >
+        <div class="fixed md:max-w-4xl lg:max-w-6xl xl:max-w-7xl z-50 bg-[#535FA8] text-white px-8 py-4 flex items-center justify-between mx-auto" id="navbar">
+        
+            <div class="text-4xl font-bold">
+                First
+            </div>
+
+            <div class="mx-[20px] sm:mx-[100px] md:hidden"></div>
+            
+            <nav class="md:space-x-4 lg:space-x-10 hidden md:flex md:ml-[30px] md:mr-[15px] lg:mr-[100px] xl:mr-[400px] text-sm">
+                <a href="#top" class="hover:text-[#14B789] hover:border-b border-[#14B789] pb-2 transition duration-250 ease-in-out">HOME</a>
+                <a href="#section2" class="hover:text-[#14B789] hover:border-b border-[#14B789] pb-2 transition duration-250 ease-in-out">ABOUT</a>
+                <a href="#section3" class="hover:text-[#14B789] hover:border-b border-[#14B789] pb-2 transition duration-250 ease-in-out">SERVICES</a>
+                <a href="#section4" class="hover:text-[#14B789] hover:border-b border-[#14B789] pb-2 transition duration-250 ease-in-out">PROJECTS</a>
+                <a href="#section5" class="hover:text-[#14B789] hover:border-b border-[#14B789] pb-2 transition duration-250 ease-in-out">CONTACT</a>
+            </nav>
+            
+
+            
+            <div class="flex items-center space-x-3">
+                <div id="logo" class="bg-white text-[#4A4E91] p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-plus" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        <path fill-rule="evenodd" d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                </div>
+                <button id="b1" class="border border-2 border-white px-4 py-2 text-lg rounded-full hover:bg-white hover:text-[#14B789] font-semibold">
+                120-240-9600
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="section1">
+        <div
+            class="bg-cover mx-2 flex justify-center bg-[url('./images/background.png')] bg-cover bg-left
+            h-[1000px] lg:h-[650px] overflow-hidden">
+
+            <div class="grid lg:grid-cols-3 mx-auto lg:max-w-[900px] xl:max-w-[1100px] w-[500px] lg:w-full lg:h-[350px] lg:mt-32 px-4 ">
+                <div class="grid grid-flow-col grid-rows-3 gap-4 col-span-2 flex flex-wrap flex-row items-center mt-20">
+                    <div class="flex flex-column space-x-5">
+                        <img src=".\images\section2-image2.jpg" class="rounded-full object-cover h-[90px] w-[90px] shadow-xl"></img>
+                        <div class="bg-white text-5xl font-bold  rounded-full py-4 px-4 shadow-xl">Hello friend!</div>
+                    </div>
+                    <div class="bg-white rounded full text-[#14B789] rounded-full font-bold text-4xl px-4 py-4 shadow-xl">
+                        I’m available for freelance work.
+                    </div>
+                    <div>
+                        <a href="#section2">
+                        <button class="bg-[#535FA8] text-white text-lg font-semibold rounded-full px-4 py-4 hover:bg-[#14B789] hover:shadow-xl transition duration-150 ease-in-out">Let's begin</button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="relative bg-white h-[350px] w-[350px] rounded-full">
+                        <img src=".\images\section1-image1.png" class="absolute bottom-1 -right-20 scale-[1.5] lg:scale-[2]"></img>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 justify-center" id="section2">
+        <div class="grid grid-cols-1 lg:grid-cols-2 px-6 max-w-3xl lg:max-w-5xl xl:max-w-7xl  mx-auto px-6 gap-12 lg:flex items-center justify-center">
+            <div class="max-w-[700px] lg:w-1/2 flex items-center justify-center">
+                <img src=".\images\section2-image1.jpg" class="rounded-2xl ">
+            </div>
+
+            <div class="max-w-[700px] lg:w-1/2">
+                <div class="bg-[#14B789] rounded-xl text-white text-4xl font-bold py-4 flex justify-center items-center my-4">
+                    My Story
+                    <img src=".\images\section2-image2.jpg" class="rounded-full object-cover h-1/4 w-1/4 ml-8">
+                </div>
+                <div>
+                    <div class="font-bold text-4xl my-4">a little bit about Joshua</div>
+                    <div class="text-gray-500">
+                        <p>This one-page HTML portfolio is provided by TemplateMo. This layout is based on Bootstrap v5.1.3 CSS and JS libraries. Image credits go to Unsplash and FreePik for images used in this page.<p>
+                        <p>You are allowed to use this template for your websites. You are not allowed to redistribute the template ZIP file on any other website. Please contact us for more info.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <section class="bg-gray-50 py-28" id="sectionX1">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center justify-center">
+        
+        
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 md:min-w-[500px]">
+        <div class="border-b border-gray-200 px-6 py-4">
+            <h3 class="text-xl font-semibold text-gray-900">Information</h3>
+        </div>
+        <div class="divide-y divide-gray-200">
+            <div class="flex items-center px-6 py-4">
+            <span class="w-32 font-semibold text-[#14B789]">Name</span>
+            <span>Joshua Morgan</span>
+            </div>
+            <div class="flex items-center px-6 py-4 bg-gray-50">
+            <span class="w-32 font-semibold text-[#14B789]">Birthday</span>
+            <span>Aug 12, 1986</span>
+            </div>
+            <div class="flex items-center px-6 py-4">
+            <span class="w-32 font-semibold text-[#14B789]">Phone</span>
+            <span>120-240-9600</span>
+            </div>
+            <div class="flex items-center px-6 py-4 bg-gray-50">
+            <span class="w-32 font-semibold text-[#14B789]">Email</span>
+            <span>hello@josh.design</span>
+            </div>
+        </div>
+        </div>
+
+    
+        <div class="grid grid-cols-2 text-center text-gray-800 md:max-w-[600px]">
+        <div class="pr-8 pb-8 border-r-2 border-b-2">
+            <h2 class="text-4xl font-bold">20+</h2>
+            <p class="mt-2 text-[#14B789]">Years of Experiences</p>
+        </div>
+        <div class="border-b-2">
+            <h2 class="text-4xl font-bold">245</h2>
+            <p class="mt-2 text-[#14B789]">Happy Customers</p>
+        </div>
+        <div class="pr-8 border-r-2 pt-8">
+            <h2 class="text-4xl font-bold">640</h2>
+            <p class="mt-2 text-[#14B789]">Project Finished</p>
+        </div>
+        <div class="pt-8">
+            <h2 class="text-4xl font-bold">72+</h2>
+            <p class="mt-2 text-[#14B789]">Digital Awards</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="items-center h-[550px] sm:h-[450px] lg:h-[350px]" id="sectionX2">
+    <div class="flex text-4xl text-black font-bold justify-center mx-auto mt-24">Companies I've had worked</div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-16 flex max-w-[1100px] mx-auto justify-center mt-16">
+        <div class="w-[100px] mx-4 flex justify-center items-center mx-auto"><img src=".\images\companie1.svg"></img></div>
+        <div class="w-[100px] mx-4 flex justify-center items-center mx-auto"><img src=".\images\companie2.svg"></img></div>
+        <div class="w-[100px] mx-4 flex justify-center items-center mx-auto"><img src=".\images\companie3.svg"></img></div>
+        <div class="w-[100px] mx-4 flex justify-center items-center mx-auto"><img src=".\images\companie4.svg"></img></div>
+        <div class="w-[100px] mx-4 flex justify-center items-center mx-auto"><img src=".\images\companie5.svg"></img></div>
+    </div>
+        
+    </section>
+
+    <section class="bg-gray-50 py-28 flex-row justify-center mx-[12px]" id="section3">
+    <div class="flex mx-auto justify-center items-center py-3 text-5xl font-bold text-white bg-[#14B789] lg:max-w-[1100px] border rounded-xl">
+        <img src=".\images\section3-image1.jpg" class="rounded-full object-cover h-[150px] w-[150px] mr-8">
+        Services
+    </div>
+    
+    <div class="grid lg:grid-cols-2 max-w-[1090px]  flex items-center flex mx-auto justify-center gap-4 ">
+        
+    
+
+
+
+        <div class="group relative overflow-hidden h-[500px] mt-8 lg:mt-28 border border-2 border-white rounded-[20px] bg-white shadow-sm px-10 py-10 hover:border-2 hover:border-[#14B789] hover:shadow-xl lg:max-w-[525px] transition duration-500 ease-in-out">
+        <div class="relative flex-column">
+            <div class="text-4xl font-bold pb-6">Websites</div>
+            <div class="absolute top-2 right-0 rounded-full bg-[#4A4E91] px-4 py-1 overflow-hidden group-hover:bg-[#14B789] transition duration-500 ease-in-out">
+            <p class="text-white font-semibold">$2,400</p>
+            <div class="absolute -top-5 -right-5 rounded-full bg-[#14B789] px-5 py-5 group-hover:bg-[#4A4E91]"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex-grow border-t border-gray-300"></div>
+            <div class="pb-8 pt-6 text-lg text-gray-600">You may want to explore Too CSS for great collection of free HTML CSS templates.
+            </div>
+            <a href="#section1">
+            <button class="text-lg text-gray-500 border border-2 border-gray-200 px-7 py-3 rounded-full hover:bg-[#14B789] hover:text-white hover:border-[#14B789] font-bold transition duration-150 ease-in-out">
+                Discover More
+            </button>
+            </a>
+        </div>
+        <div class="absolute -bottom-22 -right-14 h-[350px] w-1/2 border border-2 border-gray-100 hover:border-ts rounded-2xl transform -rotate-[35deg] group-hover:bg-[#14B789] transition duration-500 ease-in-out">
+            <div class="flex mt-20 items-center justify-center group-hover:text-white transition duration-500 ease-in-out">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+            </svg>
+            </div>
+        </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[500px] mb-2 mt-4 lg:mt-0 border border-2 border-white rounded-[20px] bg-white shadow-sm px-10 py-10 hover:border-2 hover:border-[#14B789] hover:shadow-xl lg:max-w-[525px] transition duration-500 ease-in-out">
+        <div class="relative flex-column">
+            <div class="text-4xl font-bold pb-6">Branding</div>
+            <div class="absolute top-2 right-0 rounded-full bg-[#4A4E91] px-4 py-1 overflow-hidden group-hover:bg-[#14B789] transition duration-500 ease-in-out">
+            <p class="text-white font-semibold">$1,200</p>
+            <div class="absolute -top-5 -right-5 rounded-full bg-[#14B789] px-5 py-5 group-hover:bg-[#4A4E91]"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex-grow border-t border-gray-300"></div>
+            <div class="pb-8 pt-6 text-lg text-gray-600">You can explore more CSS templates on TemplateMo website by browsing through different tags.
+            </div>
+            <a href="#section1">
+            <button class="text-lg text-gray-500 border border-2 border-gray-200 px-7 py-3 rounded-full hover:bg-[#14B789] hover:text-white hover:border-[#14B789] font-bold transition duration-150 ease-in-out">
+                Discover More
+            </button>
+            </a>
+        </div>
+        <div class="absolute -bottom-22 -right-14 h-[350px] w-1/2 border border-2 border-gray-100 hover:border-ts rounded-2xl transform -rotate-[35deg] group-hover:bg-[#14B789] transition duration-500 ease-in-out">
+            <div class="flex mt-20 items-center justify-center group-hover:text-white transition duration-500 ease-in-out">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+            </svg>
+            </div>
+        </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[500px] mt-2 lg:mt-4 border border-2 border-white rounded-[20px] bg-white shadow-sm px-10 py-10 hover:border-2 hover:border-[#14B789] hover:shadow-xl lg:max-w-[525px] transition duration-500 ease-in-out">
+        <div class="relative flex-column">
+            <div class="text-4xl font-bold pb-6">Ecommerce</div>
+            <div class="absolute top-2 right-0 rounded-full bg-[#4A4E91] px-4 py-1 overflow-hidden group-hover:bg-[#14B789] transition duration-500 ease-in-out">
+            <p class="text-white font-semibold">$3,600</p>
+            <div class="absolute -top-5 -right-5 rounded-full bg-[#14B789] px-5 py-5 group-hover:bg-[#4A4E91]"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex-grow border-t border-gray-300"></div>
+            <div class="pb-8 pt-6 text-lg text-gray-600">If you need a customized ecommerce website for your business, feel free to discuss with me.
+            </div>
+            <a href="#section1">
+            <button class="text-lg text-gray-500 border border-2 border-gray-200 px-7 py-3 rounded-full hover:bg-[#14B789] hover:text-white hover:border-[#14B789] font-bold transition duration-150 ease-in-out">
+                Discover More
+            </button>
+            </a>
+        </div>
+        <div class="absolute -bottom-22 -right-14 h-[350px] w-1/2 border border-2 border-gray-100 hover:border-ts rounded-2xl transform -rotate-[35deg] group-hover:bg-[#14B789] transition duration-500 ease-in-out">
+            <div class="flex mt-20 items-center justify-center group-hover:text-white transition duration-500 ease-in-out">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+            </svg>
+            </div>
+        </div>
+        </div>
+
+        <div class="group relative overflow-hidden h-[500px] mt-4 lg:-mt-28 border border-2 border-white rounded-[20px] bg-white shadow-sm px-10 py-10 hover:border-2 hover:border-[#14B789] hover:shadow-xl lg:max-w-[525px] transition duration-500 ease-in-out">
+        <div class="relative flex-column">
+            <div class="text-4xl font-bold pb-6">SEO</div>
+            <div class="absolute top-2 right-0 rounded-full bg-[#4A4E91] px-4 py-1 overflow-hidden group-hover:bg-[#14B789] transition duration-500 ease-in-out">
+            <p class="text-white font-semibold">$1,450</p>
+            <div class="absolute -top-5 -right-5 rounded-full bg-[#14B789] px-5 py-5 group-hover:bg-[#4A4E91]"></div>
+            </div>
+        </div>
+        <div>
+            <div class="flex-grow border-t border-gray-300"></div>
+            <div class="pb-8 pt-6 text-lg text-gray-600">To list your website first on any search engine, we will work together. First Portfolio is one-page CSS Template for free download.
+            </div>
+            <a href="#section1">
+            <button class="text-lg text-gray-500 border border-2 border-gray-200 px-7 py-3 rounded-full hover:bg-[#14B789] hover:text-white hover:border-[#14B789] font-bold transition duration-150 ease-in-out">
+                Discover More
+            </button>
+            </a>
+        </div>
+        <div class="absolute -bottom-22 -right-14 h-[350px] w-1/2 border border-2 border-gray-100 hover:border-ts rounded-2xl transform -rotate-[35deg] group-hover:bg-[#14B789] transition duration-500 ease-in-out">
+            <div class="flex mt-20 items-center justify-center group-hover:text-white transition duration-500 ease-in-out">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+            </svg>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
+    </div>
+    </section>
+
+    <section id="section4" class="py-32 flex-row justify-center mx-[12px]">
+    
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 max-w-[1300px]  flex items-center flex mx-auto justify-center">
+        <div></div>
+        <div class="md:col-span-2 flex flex-row w-full mx-auto justify-center items-center py-3 text-5xl font-bold text-white bg-[#14B789] max-w-[800px] border rounded-xl">
+            <img src=".\images\section4-image1.jpg" class="rounded-full object-cover h-[150px] w-[150px] mr-8">
+            Projects
+        </div>
+        
+        <div class="group relative overflow-hidden mx-[10px] h-[450px] sm:h-[480px]  sm:w-[400px] mt-8 border border-2 border-gray-50 rounded-[20px] bg-gray-50 shadow-sm px-10 py-10 hover:border-2 hover:border-[#14B789] hover:shadow-xl max-w-[525px] transition duration-500 ease-in-out">
+        <div class="relative flex-column">
+            <div class="text-sm text-[#14B789]">BRANDING</div>
+            <div class="text-4xl font-bold ">Zoik agency</div>
+            
+        </div>
+        <div>
+            
+            <div class="pb-8 pt-6 text-lg text-gray-600 transform rotate-[10deg] translate-y-20 ">
+                <img src=".\images\image1.jpg" class="rounded-2xl transform transition group-hover:-rotate-[10deg] group-hover:-translate-y-20 group-hover:-translate-x-4 duration-500 ease-in-out">
+            </div>
+            
+        </div>
+        
+        </div>
+
+        <div class="group relative overflow-hidden mx-[10px] h-[450px] sm:h-[480px]  sm:w-[400px] mt-8 border border-2 border-gray-50 rounded-[20px] bg-gray-50 shadow-sm px-10 py-10 hover:border-2 hover:border-[#14B789] hover:shadow-xl max-w-[525px] transition duration-500 ease-in-out">
+        <div class="relative flex-column">
+            <div class="text-sm text-[#14B789]">PHOTOGRAPHY</div>
+            <div class="text-4xl font-bold ">The Watch</div>
+            
+        </div>
+        <div>
+            
+            <div class="pb-8 pt-6 text-lg text-gray-600 transform rotate-[10deg] translate-y-20 ">
+                <img src=".\images\image2.jpg" class="rounded-2xl transform transition group-hover:-rotate-[10deg] group-hover:-translate-y-20 group-hover:-translate-x-4 duration-500 ease-in-out">
+            </div>
+            
+        </div>
+        
+        </div>
+
+        <div class="group overflow-hidden mx-[10px] h-[450px] sm:h-[480px]  sm:w-[400px] mt-8 border border-2 border-gray-50 rounded-[20px] bg-gray-50 shadow-sm px-10 py-10 hover:border-2 hover:border-[#14B789] hover:shadow-xl max-w-[525px] transition duration-500 ease-in-out">
+        
+            <div class="relative flex-column">
+                <div class="text-sm text-[#14B789]">WEBSITE</div>
+                <div class="text-4xl font-bold ">Polo</div>
+                
+            </div>
+            <div>
+                
+                <div class="pb-8 pt-6 text-lg text-gray-600 transform rotate-[10deg] translate-y-20 ">
+                    <img src=".\images\image3.jpg" class="rounded-2xl transform transition group-hover:-rotate-[10deg] group-hover:-translate-y-20 group-hover:-translate-x-4 duration-500 ease-in-out">
+                </div>
+                
+            </div>
+        
+        </div>
+
+
+    </div>      
+    </section>
+
+     <section class="bg-gray-50 py-12 " id="section5">
+    <div class="max-w-[500px] md:max-w-[800px] xl:max-w-[1100px] 2xl:max-w-[1350px] mx-auto p-6">
+    
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 mt-8 p-6 ">
+
+        <div class="bg-emerald-500 max-w-[650px] rounded-lg p-6 flex justify-center items-center space-x-6 shadow-lg">
+            <img src=".\images\section5-image1.jpg" class="rounded-full w-28 h-28 object-cover" />
+            <h1 class="text-white text-4xl font-bold">Say Hi</h1>
+        </div>
+        <div></div>
+      
+        <div class="space-y-6 bg-white shadow-md p-6 rounded-lg">
+            <div class="grid md:grid-cols-2 gap-2">
+        
+                <div>
+                    <div>
+                    <h2 class="text-sm font-semibold text-gray-700 uppercase">Services</h2>
+                    <div class="flex flex-wrap gap-2 mt-2 max-w-[100px] xl:max-w-3xl">
+                        <span class="px-4 py-1 bg-gray-100 rounded-full text-sm">Websites</span>
+                        <span class="px-4 py-1 bg-gray-100 rounded-full text-sm">Branding</span>
+                        <span class="px-4 py-1 bg-gray-100 rounded-full text-sm">Ecommerce</span>
+                        <span class="px-4 py-1 bg-gray-100 rounded-full text-sm">SEO</span>
+                    </div>
+                    </div>
+
+                    
+                    <div>
+                    <h2 class="text-sm font-semibold text-gray-700 uppercase">Stay Connected</h2>
+                    <div class="flex gap-4 mt-2 text-gray-600 text-xl">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    </div>
+
+                    
+                    <div>
+                    <h2 class="text-sm font-semibold text-gray-700 uppercase">Start a Project</h2>
+                    <p class="text-gray-600 mt-1">I’m available for freelance projects</p>
+                    </div>
+                </div>
+        
+                <div>
+                    <div class="flex-grow border-t border-gray-300 my-8 md:hidden"></div>
+                    <div>
+                    <h2 class="text-sm font-semibold text-gray-700 uppercase">About</h2>
+                    <p class="text-gray-600 mt-1">
+                        Joshua is a professional web developer. Feel free to get in touch with me.
+                    </p>
+                    </div>
+
+                    
+                    <div>
+                    <h2 class="text-sm font-semibold text-gray-700 uppercase">Email</h2>
+                    <p class="text-gray-600 mt-1">hello@josh.design</p>
+
+                    <h2 class="text-sm font-semibold text-gray-700 uppercase mt-4">Call</h2>
+                    <p class="text-gray-600 mt-1">120-240-9600</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+                    <!-- Form -->
+                    <div class="space-y-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <input id="name" type="text" placeholder="Name" class="w-full border rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400" />
+                        <input id="mail" type="email" placeholder="Email address" class="w-full border rounded-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-400" />
+                        </div>
+
+                        
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                        <button class="border rounded-sm px-4 py-3 text-center focus:ring-2 focus:ring-emerald-400">
+                            <div class="text-emerald-500 text-xl mb-1"><i class="fas fa-globe"></i></div>
+                            <div class="text-sm">Websites</div>
+                        </button>
+                        <button class="border rounded-sm px-4 py-3 text-center focus:ring-2 focus:ring-emerald-400">
+                            <div class="text-emerald-500 text-xl mb-1"><i class="fas fa-lightbulb"></i></div>
+                            <div class="text-sm">Branding</div>
+                        </button>
+                        <button class="border rounded-sm px-4 py-3 text-center focus:ring-2 focus:ring-emerald-400">
+                            <div class="text-emerald-500 text-xl mb-1"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="text-sm">Ecommerce</div>
+                        </button>
+                        <button class="border rounded-sm px-4 py-3 text-center focus:ring-2 focus:ring-emerald-400">
+                            <div class="text-emerald-500 text-xl mb-1"><i class="fab fa-google"></i></div>
+                            <div class="text-sm">SEO</div>
+                        </button>
+                        </div>
+
+                        
+                        <textarea id="project" placeholder="Tell me about the project" class="w-full border rounded-sm px-4 py-2 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-emerald-400"></textarea>
+
+                        
+                        <div class="text-right">
+                        <button class="bg-emerald-500 hover:bg-[#535FA8] text-white px-8 py-2 rounded-full" onclick="logData()">Send</button>
+                        </div>
+                    </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <footer class="h-[120px] flex justify-center items-center text-sm fontawesome text-gray-500">
+        <p class="border-r-2 pr-6">
+        Copyright © 2036 
+        <a class="font-semibold text-gray-600 hover:text-[#14B789]" href="#section1">FirstV Portfolio</a>
+         Company. All rights reserved.
+        </p>
+        <p class="pl-6">
+        Design: <a class="font-semibold text-gray-600 hover:text-[#14B789]" href="#section1">TemplateMe</a>
+        </p>
+    </footer>
+
+
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        const onScroll = () => {
+            if (window.scrollY > 10) {
+            navbar.classList.add('bg-white', 'shadow-md', 'text-black','rounded-xl');
+            navbar.classList.remove('bg-[#535FA8]', 'text-white');
+
+            logo.classList.add('bg-[#14B789]','text-white');
+            logo.classList.remove('bg-white','text-[#4A4E91]');
+
+            b1.classList.add('border-[#14B789]','text-[#14B789]','hover:bg-[#14B789]','hover:text-white');
+            b1.classList.remove('border-white','hover:bg-white','hover:text-[#14B789]');
+
+            } else {
+            navbar.classList.remove('bg-white', 'shadow-md', 'text-black','rounded-xl');
+            navbar.classList.add('bg-[#535FA8]', 'text-white');
+
+            logo.classList.remove('bg-[#14B789]','text-white');
+            logo.classList.add('bg-white','text-[#4A4E91]');
+
+            b1.classList.remove('border-[#14B789]','text-[#14B789]','hover:bg-[#14B789]','hover:text-white');
+            b1.classList.add('border-white','hover:bg-white','hover:text-[#14B789]');
+            }
+        };
+
+        window.addEventListener('scroll', onScroll);
+
+        
+
+
+        const logData = () => {
+            console.log(document.getElementById('name').value);
+            console.log(document.getElementById('mail').value);
+            console.log(document.getElementById('project').value);
+        }
+    </script>
+
+
+</body>
+</html>
